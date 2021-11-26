@@ -1,7 +1,7 @@
-const myFuncs = require("test_fizzBuzz.js")
+const fizzBuzzGame = require("./fizzBuzzGame.js");
 
 describe("fizzBuzz", () => {
-    let fizzBuzz = fizzBuzz.fizzBuzz;
+    let fizzBuzz = fizzBuzzGame.fizzBuzz;
 
     it("is a function", () => {
         expect(fizzBuzz).toBeDefined();
@@ -11,11 +11,11 @@ describe("fizzBuzz", () => {
         expect(fizzBuzz(30)).toEqual("FizzBuzz");
     });
 
-    it("returns FizzBuzz when input is a multiple of 3", () => {
+    it("returns Fizz when input is a multiple of 3", () => {
         expect(fizzBuzz(30)).toEqual("Fizz");
     });
 
-    it("returns FizzBuzz when input is a multiple of 5", () => {
+    it("returns Buzz when input is a multiple of 5", () => {
         expect(fizzBuzz(30)).toEqual("Buzz");
     });
 
