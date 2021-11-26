@@ -1,0 +1,1 @@
+const myFuncs = require('./test_fizzBuzz.js')
