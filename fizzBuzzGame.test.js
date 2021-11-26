@@ -12,11 +12,11 @@ describe("fizzBuzz", () => {
     });
 
     it("returns Fizz when input is a multiple of 3", () => {
-        expect(fizzBuzz(30)).toEqual("Fizz");
+        expect(fizzBuzz(9)).toEqual("Fizz");
     });
 
     it("returns Buzz when input is a multiple of 5", () => {
-        expect(fizzBuzz(30)).toEqual("Buzz");
+        expect(fizzBuzz(20)).toEqual("Buzz");
     });
 
     it("returns input when input is not a multiple of 3 or 5", () => {
